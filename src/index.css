@@ -1,0 +1,359 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 110px;
+}
+body {
+  width: 100vw;
+  font-weight: 400;
+  margin-bottom: 500px;
+}
+a {
+  text-decoration: none;
+}
+button:hover {
+  cursor: pointer;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  font-size: 18px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.logo h1 {
+  font-family: Parisienne;
+}
+header a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+header a:hover {
+  background-color: rgb(140, 19, 19);
+  color: #fff;
+  padding: 15px 20px;
+}
+.firstPageContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 160px;
+}
+.firstPageContent .ngopi {
+  font-size: 70px;
+  font-family: "Poiret One", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  width: 800px;
+}
+.firstPageContent .ngopi::after {
+  content: "";
+  width: 250px;
+  background-color: black;
+  border-radius: 50%;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translate(-50%, -50%);
+}
+.firstPageContent .wish {
+  font-size: 50px;
+  font-family: roboto;
+  margin: 50px 0 10px 0;
+  color: rgb(107, 12, 12);
+  letter-spacing: -2px;
+  text-transform: capitalize;
+}
+.para,
+.firstPageContent button {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+}
+.firstPageContent button {
+  padding: 15px 25px;
+  font-size: 20px;
+  overflow: hidden;
+  text-transform: uppercase;
+  margin-top: 60px;
+  border: none;
+  border-radius: 0 20px;
+  background-color: rgb(107, 12, 12);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  transition: 0.3s;
+}
+.firstPageContent button:hover {
+  background-color: rgb(140, 19, 19);
+  transform: scale(1.02);
+}
+.coffeeImages {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.coffeeImages .zoomImage {
+  width: 240px;
+  height: 340px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.coffeeImages img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.coffeeImages img:hover {
+  transform: scale(1.3);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.coffeeImages .zoomImage:nth-child(odd) {
+  border-radius: 0 90px;
+}
+.coffeeImages .zoomImage:nth-child(even) {
+  border-radius: 90px 0;
+}
+.arrow {
+  rotate: 315deg;
+  font-size: 15px;
+}
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 150px;
+  border: 1px solid gray;
+  border-left: 0;
+  border-right: 0;
+  padding: 40px 0;
+  column-gap: 40px;
+}
+.numbers span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid gray;
+}
+.numbers span:last-child {
+  border-right: 0;
+}
+.numbers span p:first-child {
+  font-size: 70px;
+  font-family: roboto;
+  font-weight: 700;
+  padding: 10px 30px;
+}
+.numbers span p:last-child {
+  font-family: roboto;
+  letter-spacing: 1px;
+}
+
+/* Second Page Starts */
+.secondPageContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.secondPageContent p {
+  color: gray;
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: roboto;
+}
+.secondPageContent h3 {
+  font-size: 40px;
+  text-transform: capitalize;
+  color: rgb(68, 68, 68);
+  font-family: "poiret one";
+  position: relative;
+}
+.secondPageContent h3::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 40px;
+  bottom: -10px;
+  position: absolute;
+  background-color: orangered;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.writeUp {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  align-items: center;
+  column-gap: 40px;
+}
+.writeUp p {
+  font-family: roboto;
+  font-size: 20px;
+  font-weight: 200;
+  width: 600px;
+}
+.texter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: auto;
+  row-gap: 20px;
+}
+.texter button {
+  border: none;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  background-color: rgb(107, 12, 12);
+  color: #fff;
+  letter-spacing: 2.5px;
+  margin: auto;
+  border-radius: 0 20px;
+  transition: 0.3s;
+}
+.texter button:hover {
+  background-color: rgb(140, 19, 19);
+  transform: scale(1.02);
+}
+.texter button::first-letter {
+  font-size: 20px;
+}
+.images2 {
+  display: flex;
+  column-gap: 10px;
+  height: 350px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.images2 img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  transition: 1s;
+  box-shadow: 0 0 20px gray;
+}
+.images2 img:hover {
+  transform: translateY(-15px);
+  box-shadow: none;
+}
+.images2 :nth-child(odd) {
+  border-radius: 0 35%;
+  align-self: flex-end;
+}
+.images2 :nth-child(even) {
+  border-radius: 35% 0;
+  align-self: flex-start;
+}
+
+.aboutImg {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.testimonialCards {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  position: relative;
+}
+.testimonialCards::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: gray;
+  width: 60%;
+  height: 4px;
+  bottom: -120px;
+  border-radius: 50%;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  column-gap: 15px;
+}
+.avatar p {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+}
+.nameAndStar {
+  row-gap: 15px;
+  font-family: roboto;
+}
+
+.avatar .star1 {
+  color: gold;
+  margin-top: 7px;
+}
+.cardText {
+  width: 250px;
+  font-family: roboto;
+  font-weight: 300;
+  margin-top: 20px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+.firstCard,
+.secondCard,
+.thirdCard {
+  box-shadow: 0 0 40px gray;
+  padding: 40px;
+  border-radius: 30px;
+  margin-top: 50px;
+  background-color: rgb(140, 19, 19);
+  color: #fff;
+  transition: 0.5s;
+}
+.firstCard:hover,
+.secondCard:hover,
+.thirdCard:hover {
+}
+.blog {
+  margin-top: 300px;
+}
