@@ -11,7 +11,7 @@ function Header() {
         <a href="#products">Products</a>
         <a href="#aboutUs">About Us</a>
         <a href="#testimonial">Testimonial</a>
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </div>
     </header>
   );

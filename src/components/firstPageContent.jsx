@@ -19,11 +19,7 @@ function FirstPage() {
       <a href="#">
         <button id="images">
           explore our products{" "}
-          <FontAwesomeIcon
-            className="arrow"
-            icon={faArrowDown}
-            rotation={315}
-          />
+          <FontAwesomeIcon className="arrow" icon={faArrowDown} />
         </button>
       </a>
       <div className="coffeeImages" id="products">

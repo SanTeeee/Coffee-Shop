@@ -4,6 +4,7 @@ import Header from "./header";
 import ThirdPageContents from "./thirdPageContent";
 import Testimonial from "./testimonial";
 import Blog from "./blog";
+import Footer from "./footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ThirdPageContents></ThirdPageContents>
       <Testimonial></Testimonial>
       <Blog></Blog>
+      <Footer></Footer>
     </div>
   );
 }

@@ -37,7 +37,7 @@ function Testimonial() {
           <div className="avatar">
             <img src={face2} alt="" className="aboutImg" />
             <div className="nameAndStar">
-              <p>Michael Echeta</p>
+              <p>Vaughn Bobrisky</p>
               <FontAwesomeIcon className="star1" icon={faStar} />
               <FontAwesomeIcon className="star1" icon={faStar} />
               <FontAwesomeIcon className="star1" icon={faStar} />
@@ -57,7 +57,7 @@ function Testimonial() {
           <div className="avatar">
             <img src={face3} alt="" className="aboutImg" />
             <div className="nameAndStar">
-              <p>Michael Echeta</p>
+              <p>Kim BobNotRisky</p>
               <FontAwesomeIcon className="star1" icon={faStar} />
               <FontAwesomeIcon className="star1" icon={faStar} />
               <FontAwesomeIcon className="star1" icon={faStar} />
