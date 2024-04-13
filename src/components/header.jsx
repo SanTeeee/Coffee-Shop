@@ -13,6 +13,11 @@ function Header() {
         <a href="#testimonial">Testimonial</a>
         <a href="#contact">Contact</a>
       </div>
+      <nav class="hamburger">
+        <span class="ham"></span>
+        <span class="ham"></span>
+        <span class="ham"></span>
+      </nav>
     </header>
   );
 }
