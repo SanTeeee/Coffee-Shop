@@ -32,11 +32,7 @@ function ThirdPageContents() {
           <a href="#">
             <button>
               read more
-              <FontAwesomeIcon
-                className="arrow"
-                icon={faArrowDown}
-                rotation={315}
-              />
+              <FontAwesomeIcon className="arrow" icon={faArrowDown} />
             </button>
           </a>
         </div>

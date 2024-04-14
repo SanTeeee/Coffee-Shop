@@ -18,14 +18,14 @@ function Blog() {
         <div className="card one">
           <img src={image1} alt="" />
           <div className="calender">
-            <p className="nameIcon">
+            <div className="nameIcon">
               <FontAwesomeIcon className="user" icon={faUser} />
               <p>John Doe</p>
-            </p>
-            <p className="date">
+            </div>
+            <div className="date">
               <FontAwesomeIcon icon={faCalendarDays} className="cal" />
               <p>Feb 23, 2024</p>
-            </p>
+            </div>
           </div>
           <div className="lorem">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
@@ -40,14 +40,14 @@ function Blog() {
           {" "}
           <img src={image2} alt="" />
           <div className="calender">
-            <p className="nameIcon">
+            <div className="nameIcon">
               <FontAwesomeIcon className="user" icon={faUser} />
               <p>John Doe</p>
-            </p>
-            <p className="date">
+            </div>
+            <div className="date">
               <FontAwesomeIcon icon={faCalendarDays} className="cal" />
               <p>Feb 23, 2024</p>
-            </p>
+            </div>
           </div>
           <div className="lorem">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
@@ -62,14 +62,14 @@ function Blog() {
           {" "}
           <img src={image3} alt="" />
           <div className="calender">
-            <p className="nameIcon">
+            <div className="nameIcon">
               <FontAwesomeIcon className="user" icon={faUser} />
               <p>John Doe</p>
-            </p>
-            <p className="date">
+            </div>
+            <div className="date">
               <FontAwesomeIcon icon={faCalendarDays} className="cal" />
               <p>Feb 23, 2024</p>
-            </p>
+            </div>
           </div>
           <div className="lorem">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
@@ -84,11 +84,7 @@ function Blog() {
       <a href="#">
         <button>
           read more
-          <FontAwesomeIcon
-            className="arrow"
-            icon={faArrowDown}
-            rotation={315}
-          />
+          <FontAwesomeIcon className="arrow" icon={faArrowDown} />
         </button>
       </a>
     </div>
