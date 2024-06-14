@@ -8,8 +8,21 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { useState } from "react";
 
 function Footer() {
+  const [name, setName] = useState("");
+  const [heading, setHeading] = useState("Subscribe");
+
+  function handleHeading(event) {
+    setName(event.target.value);
+  }
+  function handleClick(event) {
+    setHeading("Thank you for subscribing");
+    setName("");
+    event.preventDefault();
+  }
+
   return (
     <div className="footerContainer" id="contact">
       <div className="footer1">
@@ -62,19 +75,21 @@ function Footer() {
           </div>
         </div>
         <form action="post">
-          <label htmlFor="#myEMail">subscribe</label>
+          <label htmlFor="#myEMail">{heading}</label>
           <div className="icon">
             <input
               type="email"
               id="myEmail"
               placeholder="name@domain.com"
               required
+              value={name}
+              onChange={handleHeading}
             />
             <div className="i">
               <FontAwesomeIcon icon={faEnvelope} />
             </div>
             <a href="#" className="sendBtn">
-              <button>Send</button>
+              <button onClick={handleClick}>Subscribe</button>
             </a>
           </div>
         </form>

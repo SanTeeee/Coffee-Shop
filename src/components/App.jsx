@@ -5,7 +5,6 @@ import ThirdPageContents from "./thirdPageContent";
 import Testimonial from "./testimonial";
 import Blog from "./blog";
 import Footer from "./footer";
-import hamburger from "..";
 
 function App() {
   return (
