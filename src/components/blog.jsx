@@ -84,7 +84,7 @@ function Blog() {
       <a href="#">
         <button>
           read more
-          <FontAwesomeIcon clsassName="arrow" icon={faArrowDown} />
+          <FontAwesomeIcon className="arrow" icon={faArrowDown} />
         </button>
       </a>
     </div>

@@ -1,7 +1,9 @@
+import { useState } from "react";
 import Logo from "../assets/Logo.png";
 import Aos from "aos";
 Aos.init();
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header
       data-aos="fade-down"
@@ -13,13 +15,15 @@ function Header() {
         <img src={Logo} alt="" />
         <h1>Ngopi</h1>
       </div>
-      <div className="navLinks">
+      <div className={`navLinks` + `${isOpen ? "-True" : "-False"}`}>
         <a href="#products">Products</a>
         <a href="#aboutUs">About Us</a>
         <a href="#testimonial">Testimonial</a>
         <a href="#contact">Contact</a>
       </div>
-      <nav className="hamburger ">
+      <nav
+        className={isOpen ? "barTranslate" : ""}
+        onClick={() => setIsOpen(!isOpen)}>
         <span className="ham"></span>
         <span className="ham"></span>
         <span className="ham"></span>
