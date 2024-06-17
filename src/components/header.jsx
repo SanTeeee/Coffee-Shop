@@ -1,8 +1,14 @@
 import Logo from "../assets/Logo.png";
-
+import Aos from "aos";
+Aos.init();
 function Header() {
   return (
-    <header>
+    <header
+      data-aos="fade-down"
+      data-aos-offset="50"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out">
       <div className="logo">
         <img src={Logo} alt="" />
         <h1>Ngopi</h1>

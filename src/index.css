@@ -70,7 +70,6 @@ span.ham {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 160px;
 }
 .firstPageContent .ngopi {
   font-size: 70px;
@@ -81,6 +80,7 @@ span.ham {
   font-weight: 700;
   position: relative;
   width: 800px;
+  margin-top: 160px;
 }
 .firstPageContent .ngopi::after {
   content: "";

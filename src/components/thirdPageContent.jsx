@@ -2,7 +2,8 @@ import coffee1 from "../assets/coffee2.jpeg";
 import coffee2 from "../assets/coffeeforaboutus1.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-
+import AOS from "aos";
+AOS.init();
 function ThirdPageContents() {
   return (
     <div id="aboutUs">
