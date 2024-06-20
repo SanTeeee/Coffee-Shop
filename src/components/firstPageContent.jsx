@@ -34,35 +34,35 @@ function FirstPage() {
         <div className="zoomImage" data-aos="fade-up" data-aos-duration="400">
           <img src={cof1} alt="" loading="lazy" />
         </div>
-        <div className="zoomImage" data-aos="fade-up" data-aos-duration="1000">
+        <div className="zoomImage" data-aos="fade-up" data-aos-duration="600">
           <img src={cof2} alt="" loading="lazy" />
         </div>
-        <div className="zoomImage" data-aos="fade-up" data-aos-duration="1600">
+        <div className="zoomImage" data-aos="fade-up" data-aos-duration="700">
           <img src={cof3} alt="" loading="lazy" />
         </div>
-        <div className="zoomImage" data-aos="fade-up" data-aos-duration="2200">
+        <div className="zoomImage" data-aos="fade-up" data-aos-duration="800">
           <img src={cof4} alt="" loading="lazy" />
         </div>
-        <div className="zoomImage" data-aos="fade-up" data-aos-duration="2800">
+        <div className="zoomImage" data-aos="fade-up" data-aos-duration="900">
           <img src={cof5} alt="" loading="lazy" />
         </div>
       </div>
       <div className="numbers">
         <span>
           <p>30+</p>
-          <p>Coffee Variant</p>
+          <p>Coffee Variants</p>
         </span>
         <span>
           <p>20+</p>
-          <p>Meeting room</p>
+          <p>Meeting rooms</p>
         </span>
         <span>
           <p>25+</p>
-          <p>Event space</p>
+          <p>Event spaces</p>
         </span>
         <span>
           <p>40+</p>
-          <p>Global Achievement</p>
+          <p>Global Achievements</p>
         </span>
       </div>
     </div>

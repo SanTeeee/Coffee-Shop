@@ -3,16 +3,20 @@ import face2 from "../assets/face2.jpeg";
 import face3 from "../assets/face3.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-
+import Aos from "aos";
+Aos.init();
 function Testimonial() {
   return (
-    <div id="testimonial">
+    <div id="testimonial" data-aos="zoom-in-up" data-aos-duration="1000">
       <div className="secondPageContent">
         <p>Testimonial</p>
         <h3>what our buyers say</h3>
       </div>
       <div className="testimonialCards">
-        <div className="firstCard">
+        <div
+          className="firstCard"
+          data-aos="zoom-in-right"
+          data-aos-duration="2000">
           <div className="avatar">
             <img src={face1} alt="" className="aboutImg" />
             <div className="nameAndStar">
@@ -33,7 +37,10 @@ function Testimonial() {
           </div>
         </div>
 
-        <div className="secondCard">
+        <div
+          className="secondCard"
+          data-aos="flip-left"
+          data-aos-duration="1000">
           <div className="avatar">
             <img src={face2} alt="" className="aboutImg" />
             <div className="nameAndStar">
@@ -53,7 +60,10 @@ function Testimonial() {
             eligendi architecto.
           </div>
         </div>
-        <div className="thirdCard">
+        <div
+          className="thirdCard"
+          data-aos="zoom-in-left"
+          data-aos-duration="1000">
           <div className="avatar">
             <img src={face3} alt="" className="aboutImg" />
             <div className="nameAndStar">

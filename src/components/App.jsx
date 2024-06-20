@@ -9,13 +9,13 @@ import Footer from "./footer";
 function App() {
   return (
     <div>
-      <Header></Header>
-      <FirstPage></FirstPage>
-      <SecondPage></SecondPage>
-      <ThirdPageContents></ThirdPageContents>
-      <Testimonial></Testimonial>
-      <Blog></Blog>
-      <Footer></Footer>
+      <Header />
+      <FirstPage />
+      <SecondPage />
+      <ThirdPageContents />
+      <Testimonial />
+      <Blog />
+      <Footer />
     </div>
   );
 }

@@ -105,6 +105,10 @@ span.ham {
 .firstPageContent button {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.5px;
+
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
 }
 .firstPageContent button {
   padding: 15px 25px;
@@ -235,7 +239,6 @@ span.ham {
   margin-top: 70px;
   align-items: center;
   column-gap: 20px;
-  padding: 0 40px;
 }
 .writeUp p {
   font-family: roboto;
@@ -246,9 +249,6 @@ span.ham {
 .texter {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  height: auto;
   row-gap: 20px;
 }
 
@@ -258,7 +258,7 @@ span.ham {
   justify-content: center;
   column-gap: 6px;
   height: 100%;
-  width: 100%;
+  width: auto;
   border: none;
   padding: 15px 20px;
   text-transform: uppercase;
@@ -466,7 +466,7 @@ span.ham {
   color: #fff;
   padding: 60px 0;
   text-transform: capitalize;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 .footerContainer a {
@@ -583,10 +583,206 @@ span.ham {
 .sendBtn button:hover {
   background-color: rgb(140, 19, 19);
 }
-
 @media screen and (max-width: 1250px) {
   header {
-    padding: 30px;
+    padding: 30px 40px;
+  }
+  header a {
+    margin: 0 5px;
+    font-size: 16px;
+  }
+  .firstPageContent .ngopi {
+    font-size: 60px;
+  }
+  .firstPageContent .ngopi::after {
+    width: 150px;
+    bottom: -35px;
+  }
+  .firstPageContent .wish {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+  .para {
+    padding: 0 50px;
+  }
+  .firstPageContent button {
+    letter-spacing: 0;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .firstPageContent a #images {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  .arrow {
+    rotate: 315deg;
+    font-size: 16px;
+  }
+  .coffeeImages .zoomImage {
+    width: 170px;
+    height: 250px;
+  }
+  .coffeeImages .zoomImage:nth-child(odd) {
+    border-radius: 0 60px;
+  }
+  .coffeeImages .zoomImage:nth-child(even) {
+    border-radius: 60px 0;
+  }
+  .numbers {
+    width: 80%;
+    margin-top: 100px;
+    padding: 20px 0;
+    column-gap: 20px;
+  }
+  .numbers span p:first-child {
+    font-size: 50px;
+  }
+  /* Second Page Starts */
+  .secondPageContent p {
+    font-size: 20px;
+  }
+  .secondPageContent h3 {
+    font-size: 25px;
+  }
+  /* About us */
+  .writeUp {
+    margin-top: 50px;
+    column-gap: 20px;
+    width: 100%;
+  }
+  .writeUp p {
+    font-family: roboto;
+    font-size: 18px;
+    width: 100%;
+  }
+  .texter {
+    row-gap: 10px;
+    align-items: center;
+    width: 80%;
+  }
+  .texter button {
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  .images2 {
+    column-gap: 10px;
+    height: 270px;
+    margin-top: 30px;
+  }
+  .images2 img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    transition: 1s;
+    box-shadow: 0 0 20px gray;
+  }
+  /* Testimonial */
+  .testimonialCards {
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .firstCard,
+  .secondCard,
+  .thirdCard {
+    padding: 40px 30px;
+    border-radius: 8px;
+    background-color: rgb(140, 19, 19);
+    width: 400px;
+    color: #fff;
+  }
+  .cardText {
+    width: auto;
+    font-family: roboto;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+  }
+  /* blog */
+
+  /* footer */
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    padding: 30px 20px;
+  }
+  header a {
+    margin: 0 10px;
+    position: relative;
+    padding: 0 4px;
+  }
+  header a:hover {
+    background-color: white;
+    color: #000;
+    padding: 0 4px;
+  }
+  header a::after {
+    content: "";
+    display: block;
+    background-color: rgb(140, 19, 19);
+    position: absolute;
+    bottom: -44px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.3s;
+  }
+  header a:hover:after {
+    transform: scaleX(1);
+  }
+  .firstPageContent .ngopi {
+    font-size: 40px;
+    width: 500px;
+  }
+  .firstPageContent .wish {
+    font-size: 25px;
+    margin-top: 60px;
+  }
+  .footerContainer {
+    flex-direction: column;
+    margin-top: 120px;
+    padding: 60px 20px;
+    letter-spacing: 0.5px;
+  }
+  .footer1 {
+    margin-bottom: 50px;
+  }
+  .footer2Div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .socialMedia h1,
+  .quickLinks h1,
+  .resources h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 700px) {
+  html,
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 15px 20px;
+  }
+  .logo img {
+    height: 30px;
+    width: 30px;
+  }
+  .logo h1 {
+    font-size: 22px;
+  }
+  span.ham {
+    margin: 4px;
+    width: 22px;
+    height: 3px;
   }
   header a {
     padding: 15px;
@@ -595,6 +791,25 @@ span.ham {
   }
   header a:hover {
     padding: 15px;
+  }
+  header a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 20px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  header a:hover {
+    background-color: rgb(140, 19, 19);
+    color: #fff;
+    padding: 15px 20px;
+  }
+
+  header a:hover:after {
+    transform: scaleX(0);
   }
   nav {
     display: block;
@@ -609,14 +824,12 @@ span.ham {
     display: flex;
     justify-content: flex-start;
     top: 0px;
-    width: 40vw;
+    width: 70vw;
     flex-direction: column;
     position: absolute;
     transition: 0.9s;
-    margin-top: 110px;
+    margin-top: 60px;
     z-index: -1;
-  }
-  .navLinks-False :first-child {
   }
   .navLinks-True {
     background-color: #fff;
@@ -624,10 +837,10 @@ span.ham {
     display: flex;
     justify-content: flex-start;
     top: 0px;
-    width: 40vw;
+    width: 70vw;
     flex-direction: column;
     right: 0;
-    margin-top: 100px;
+    margin-top: 60px;
     position: absolute;
     transition: 0.5s;
     z-index: -1;
@@ -641,35 +854,36 @@ span.ham {
     opacity: 0;
   }
   .barTranslate :nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-2px) rotate(-45deg);
     transition: 0.3s;
   }
   .firstPageContent .ngopi {
-    font-size: 50px;
-    width: 500px;
+    font-size: 35px;
+    width: 250px;
   }
   .firstPageContent .ngopi::after {
-    width: 150px;
+    width: 100px;
     bottom: -25px;
   }
   .firstPageContent .wish {
-    font-size: 40px;
-    margin: 60px 0 20px 0;
+    font-size: 22px;
+    text-align: center;
+    margin: 60px 0 10px 0;
   }
   .para {
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 30px;
   }
-  .firstPageContent button {
-    padding: 20px;
-    font-size: 18px;
+  .firstPageContent a #images {
+    font-size: 15px;
+    padding: 15px 10px;
   }
   .coffeeImages .zoomImage {
-    width: 200px;
-    height: 250px;
+    width: 150px;
+    height: 200px;
   }
   .arrow {
-    font-size: 18px;
+    font-size: 15px;
   }
   .numbers {
     padding: 20px 0;
@@ -732,60 +946,5 @@ span.ham {
   }
   .sendBtn button {
     padding: 6px 15px;
-  }
-}
-
-@media screen and (max-width: 1093px) {
-  .writeUp {
-    justify-content: center;
-  }
-  .texter {
-    margin-bottom: 40px;
-  }
-  .texter,
-  .writeUp p {
-    width: 100%;
-    padding: 0 30px;
-    align-items: center;
-  }
-  .images2 {
-    column-gap: 20px;
-    width: 100%;
-    height: 400px;
-  }
-  .images2 img {
-    width: 250px;
-    height: 300px;
-  }
-  /* Testimonial */
-  .aboutImg {
-    width: 110px;
-    height: 110px;
-  }
-  .testimonialCards {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .cardText {
-    width: auto;
-  }
-  .avatar {
-    text-align: left;
-  }
-  .avatar p {
-    font-size: 25px;
-  }
-  .cardText {
-    margin-top: 10px;
-  }
-  .firstCard,
-  .secondCard,
-  .thirdCard {
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px 40px;
   }
 }

@@ -18,9 +18,13 @@ function Footer() {
     setName(event.target.value);
   }
   function handleClick(event) {
-    setHeading("Thank you for subscribing");
-    setName("");
-    event.preventDefault();
+    if (!name.includes("@")) {
+      setHeading("Please input a valid email");
+    } else {
+      setHeading("Thank you for subscribing");
+
+      event.preventDefault();
+    }
   }
 
   return (
@@ -81,7 +85,6 @@ function Footer() {
               type="email"
               id="myEmail"
               placeholder="name@domain.com"
-              required
               value={name}
               onChange={handleHeading}
             />
