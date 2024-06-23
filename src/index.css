@@ -189,7 +189,7 @@ span.ham {
 }
 .numbers span p:first-child {
   font-size: 70px;
-  font-family: roboto;
+  font-family: "roboto";
   font-weight: 700;
   padding: 10px 30px;
 }
@@ -632,6 +632,9 @@ span.ham {
     padding: 20px 0;
     column-gap: 20px;
   }
+  .numbers span {
+    text-align: center;
+  }
   .numbers span p:first-child {
     font-size: 50px;
   }
@@ -883,12 +886,14 @@ span.ham {
   .arrow {
     font-size: 15px;
   }
-  .numbers {
-    padding: 20px 0;
-  }
+
   .numbers span p:first-child {
-    font-size: 50px;
+    font-size: 20px;
   }
+  .numbers span p:last-child {
+    font-size: 13px;
+  }
+
   /* Second Page Starts */
 
   .secondPageContent h3 {
@@ -934,10 +939,6 @@ span.ham {
     border-radius: 20px;
     box-shadow: 0 0 7px gray;
   }
-  .firstCard,
-  .secondCard,
-  .thirdCard {
-  }
 
   /* Footer */
   .footer1 {
@@ -959,5 +960,17 @@ span.ham {
   }
   .sendBtn button {
     padding: 6px 15px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .numbers {
+    column-gap: 10px;
+  }
+  .numbers span p:first-child {
+    padding: 5px 0;
+  }
+  .numbers span p:last-child {
+    padding: 0 5px;
   }
 }

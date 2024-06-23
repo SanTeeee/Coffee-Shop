@@ -6,12 +6,12 @@ import AOS from "aos";
 AOS.init();
 function ThirdPageContents() {
   return (
-    <div id="aboutUs">
+    <div id="aboutUs" data-aos="zoom-in" data-aos-duration="300">
       <div className="secondPageContent">
         <p>About us</p>
         <h3>why we are the best</h3>
       </div>
-      <div className="writeUp">
+      <div className="writeUp" data-aos="zoom-in" data-aos-duration="1000">
         <div className="texter">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime

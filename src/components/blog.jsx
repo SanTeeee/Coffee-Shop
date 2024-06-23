@@ -15,7 +15,7 @@ function Blog() {
         <h3>read our articles</h3>
       </div>
       <div className="blogCards">
-        <div className="card one">
+        <div className="card one" data-aos="fade-right" data-aos-duration="500">
           <img src={image1} alt="" />
           <div className="calender">
             <div className="nameIcon">
@@ -36,7 +36,10 @@ function Blog() {
             <FontAwesomeIcon icon={faChevronRight} />
           </a>
         </div>
-        <div className="card two">
+        <div
+          className="card two"
+          data-aos="fade-right"
+          data-aos-duration="1000">
           {" "}
           <img src={image2} alt="" />
           <div className="calender">
@@ -58,7 +61,10 @@ function Blog() {
             <FontAwesomeIcon icon={faChevronRight} />
           </a>
         </div>
-        <div className="card three">
+        <div
+          className="card three"
+          data-aos="fade-right"
+          data-aos-duration="1500">
           {" "}
           <img src={image3} alt="" />
           <div className="calender">
