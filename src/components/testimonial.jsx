@@ -7,16 +7,13 @@ import Aos from "aos";
 Aos.init();
 function Testimonial() {
   return (
-    <div id="testimonial" data-aos="zoom-in-up" data-aos-duration="1000">
+    <div id="testimonial" data-aos-duration="500">
       <div className="secondPageContent">
         <p>Testimonial</p>
         <h3>what our buyers say</h3>
       </div>
       <div className="testimonialCards">
-        <div
-          className="firstCard"
-          data-aos="zoom-in-right"
-          data-aos-duration="2000">
+        <div className="firstCard" data-aos="zoom-in" data-aos-duration="2000">
           <div className="avatar">
             <img src={face1} alt="" className="aboutImg" />
             <div className="nameAndStar">
@@ -37,10 +34,7 @@ function Testimonial() {
           </div>
         </div>
 
-        <div
-          className="secondCard"
-          data-aos="flip-left"
-          data-aos-duration="1000">
+        <div className="secondCard" data-aos="zoom-in" data-aos-duration="1000">
           <div className="avatar">
             <img src={face2} alt="" className="aboutImg" />
             <div className="nameAndStar">
@@ -60,10 +54,7 @@ function Testimonial() {
             eligendi architecto.
           </div>
         </div>
-        <div
-          className="thirdCard"
-          data-aos="zoom-in-left"
-          data-aos-duration="1000">
+        <div className="thirdCard" data-aos="zoom-in" data-aos-duration="1000">
           <div className="avatar">
             <img src={face3} alt="" className="aboutImg" />
             <div className="nameAndStar">
