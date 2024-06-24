@@ -494,8 +494,7 @@ span.ham {
   column-gap: 40px;
 }
 .quickLinks,
-.resources,
-.socialMedia {
+.resources {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -507,11 +506,17 @@ span.ham {
   flex-wrap: wrap;
   column-gap: 20px;
 }
+.mediaFlex a {
+  margin-right: 4px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
 .brands {
   font-size: 30px;
   width: 100%;
   transition: 0.3s;
-  padding: 4px;
+  padding: 0;
 }
 .mediaFlex a:first-child {
   color: orangered;

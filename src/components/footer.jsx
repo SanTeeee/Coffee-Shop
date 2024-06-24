@@ -4,8 +4,9 @@ import {
   faFacebook,
   faInstagram,
   faXTwitter,
-  faYoutube,
+  faWhatsapp,
   faLinkedinIn,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
@@ -60,20 +61,25 @@ function Footer() {
           <div className="socialMedia">
             <h1>social media</h1>
             <div className="mediaFlex">
-              <a href="#">
+              <a
+                href="https://www.facebook.com/profile.php?id=100011171496661&mibextid=ZbWKwL"
+                target="_blank">
                 <FontAwesomeIcon icon={faFacebook} className="brands" />
               </a>
-              <a href="#">
+              <a href="https://x.com/MmesomaEcheta" target="_blank">
                 <FontAwesomeIcon icon={faXTwitter} className="brands" />
               </a>
-              <a href="#">
+              <a href="https://instagram.com/echetammesoma" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} className="brands" />
               </a>
-              <a href="#">
+              <a href="https://linkedin.com/in/echeta-mmesoma" target="_blank">
                 <FontAwesomeIcon icon={faLinkedinIn} className="brands" />
               </a>
-              <a href="#">
-                <FontAwesomeIcon icon={faYoutube} className="brands" />
+              <a href="https://github.com/SanTeeee" target="_blank">
+                <FontAwesomeIcon icon={faGithub} className="brands" />
+              </a>
+              <a href=" https://wa.me/07036041323 " target="_blank">
+                <FontAwesomeIcon icon={faWhatsapp} className="brands" />
               </a>
             </div>
           </div>
