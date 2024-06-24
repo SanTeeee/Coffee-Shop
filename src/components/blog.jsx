@@ -36,10 +36,7 @@ function Blog() {
             <FontAwesomeIcon icon={faChevronRight} />
           </a>
         </div>
-        <div
-          className="card two"
-          data-aos="fade-right"
-          data-aos-duration="1000">
+        <div className="card two" data-aos="fade-right" data-aos-duration="500">
           {" "}
           <img src={image2} alt="" />
           <div className="calender">
@@ -64,7 +61,7 @@ function Blog() {
         <div
           className="card three"
           data-aos="fade-right"
-          data-aos-duration="1500">
+          data-aos-duration="500">
           {" "}
           <img src={image3} alt="" />
           <div className="calender">
