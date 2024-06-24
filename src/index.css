@@ -29,14 +29,9 @@ header {
   z-index: 1;
   background-color: #fff;
 }
-header .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 10px;
-}
-.logo h1 {
-  font-family: Parisienne;
+.logo img {
+  height: 60px;
+  width: 60px;
 }
 header a {
   text-decoration: none;
@@ -488,10 +483,6 @@ span.ham {
   width: 30px;
   padding: 10px;
 }
-.toTop:hover {
-  background-color: #fff;
-  color: #484c53;
-}
 
 .footerContainer .mail {
   text-transform: lowercase;
@@ -807,15 +798,9 @@ span.ham {
   }
 
   header {
-    padding: 15px 20px;
+    padding: 5px 20px;
   }
-  .logo img {
-    height: 30px;
-    width: 30px;
-  }
-  .logo h1 {
-    font-size: 22px;
-  }
+
   span.ham {
     margin: 4px;
     width: 22px;

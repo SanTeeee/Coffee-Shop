@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/NGOW-PEE COFFEE.png";
 import Aos from "aos";
 Aos.init();
 function Header() {
@@ -16,7 +16,6 @@ function Header() {
       data-aos-duration="1000">
       <div className="logo">
         <img src={Logo} alt="" />
-        <h1>Ngopi</h1>
       </div>
       <div className={`navLinks` + `${isOpen ? "-True" : "-False"}`}>
         <a href="#products" onClick={closeHamburger}>
