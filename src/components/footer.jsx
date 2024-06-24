@@ -40,7 +40,8 @@ function Footer() {
           evenings are perfected with relaxation and rich flavors.
         </p>
         <p>
-          hello@ngopi.com<br></br> Phone : +01 23456789
+          <a href="mailto:echetammesoma@gmail.com">hello@ngopi.com</a>
+          <br></br> Phone : +234 7036041323
         </p>
       </div>
       <div className="footer2">

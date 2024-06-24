@@ -17,7 +17,7 @@ function FirstPage() {
         Enjoy your favourite coffee with Ngopi
       </p>
       <p className="wish" data-aos="fade-up">
-        Everthing you'd ever wished for in one cup
+        Everything you'd ever wished for in one cup
       </p>
       <p className="para" data-aos="fade-up">
         Discover tranquility at Ngopi a sanctuary for unwinding, where your
