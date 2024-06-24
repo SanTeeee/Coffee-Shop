@@ -434,14 +434,15 @@ span.ham {
   background-color: rgb(140, 19, 19);
   color: #fff;
 }
+
 .blog a button {
-  padding: 15px 25px;
-  font-size: 20px;
+  font-size: 16px;
+  padding: 15px 20px;
   text-transform: capitalize;
-  font-family: roboto;
+  font-family: "roboto";
   margin-top: 60px;
   border: none;
-  border-radius: 0 20px;
+  border-radius: 5px;
   background-color: rgb(107, 12, 12);
   color: white;
   display: flex;
@@ -974,6 +975,7 @@ span.ham {
   .numbers span p:last-child {
     padding: 0 5px;
   }
+  /* blog */
   .blog {
     margin-top: 100px;
   }
@@ -987,5 +989,43 @@ span.ham {
     width: 220px;
     height: 230px;
     align-self: center;
+  }
+  /* footer */
+  .footerContainer p,
+  #contact a {
+    font-size: 14px;
+  }
+  #contact .brands,
+  #contact button {
+    font-size: 18px;
+  }
+  #contact h1,
+  #contact label {
+    font-size: 16px;
+  }
+  .footer1 {
+    width: 100%;
+  }
+  .footer1 span img {
+    height: 30px;
+    width: 30px;
+  }
+  .footer2Div {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .mediaFlex a {
+    margin-right: 4px;
+  }
+  .brands {
+    padding: 0;
+  }
+  #contact input::placeholder {
+    color: #fff;
+    font-size: 16px;
+    font-family: "roboto";
+    letter-spacing: 0.5px;
+    font-weight: 100;
   }
 }

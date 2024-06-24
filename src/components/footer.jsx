@@ -89,7 +89,7 @@ function Footer() {
               onChange={handleHeading}
             />
             <div className="i">
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelope} className="brands" />
             </div>
             <a href="#" className="sendBtn">
               <button onClick={handleClick}>Subscribe</button>
