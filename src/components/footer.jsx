@@ -78,7 +78,7 @@ function Footer() {
               <a href="https://github.com/SanTeeee" target="_blank">
                 <FontAwesomeIcon icon={faGithub} className="brands" />
               </a>
-              <a href=" https://wa.me/07036041323 " target="_blank">
+              <a href=" https://wa.me/+2347036041323 " target="_blank">
                 <FontAwesomeIcon icon={faWhatsapp} className="brands" />
               </a>
             </div>
