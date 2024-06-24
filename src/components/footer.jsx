@@ -9,6 +9,7 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faHandPointUp } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 function Footer() {
@@ -30,6 +31,9 @@ function Footer() {
 
   return (
     <div className="footerContainer" id="contact">
+      <a href="#" className="toTop">
+        <FontAwesomeIcon icon={faHandPointUp} className="upIcon" />
+      </a>
       <div className="footer1">
         <span>
           <img src={logo2} alt="" />
@@ -40,7 +44,9 @@ function Footer() {
           evenings are perfected with relaxation and rich flavors.
         </p>
         <p>
-          <a href="mailto:echetammesoma@gmail.com">hello@ngopi.com</a>
+          <a href="mailto:echetammesoma@gmail.com" className="mail">
+            echetammesoma@gmail.com
+          </a>
           <br></br> Phone : +234 7036041323
         </p>
       </div>
