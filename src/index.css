@@ -395,6 +395,7 @@ span.ham {
   border-radius: 0 90px 0 10%;
   box-shadow: 0 0 3px gray;
   font-family: roboto;
+  font-weight: 300;
 }
 .card img {
   object-fit: cover;
@@ -972,5 +973,19 @@ span.ham {
   }
   .numbers span p:last-child {
     padding: 0 5px;
+  }
+  .blog {
+    margin-top: 100px;
+  }
+  .card {
+    border-radius: 0 45px;
+    width: 250px;
+  }
+  .card img {
+    object-fit: cover;
+    border-radius: 0 45px;
+    width: 220px;
+    height: 230px;
+    align-self: center;
   }
 }
