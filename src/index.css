@@ -798,7 +798,7 @@ span.ham {
   }
 
   header {
-    padding: 5px 20px;
+    padding: 15px 20px;
   }
 
   span.ham {
@@ -836,6 +836,10 @@ span.ham {
   nav {
     display: block;
     cursor: pointer;
+  }
+  .logo img {
+    width: 50px;
+    height: 50px;
   }
 
   .navLinks-False {
